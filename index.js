@@ -1,19 +1,40 @@
-let arr = [-1,-2,-3,0,0,0,0,7]
-function shuffle(arr){
+let arr = [-1, -2, -3, 0, 0, 0, 0, 7]
+function shuffle(arr) {
     let answer = [];
     let max = arr.length;
-    for(let i = 0; i < max; i++){
-        let a = Math.floor(Math.random()*arr.length)
+    for (let i = 0; i < max; i++) {
+        let a = Math.floor(Math.random() * arr.length)
         answer.push(arr[a]);
         arr.splice(a, 1)
     }
     return answer;
 }
 
-window.onerror = (e)=>{
-    console.log(e);
+function SuperType(name) {
+    this.name = name;
+    this.colors = ["red", "blue", "green"];
 }
+SuperType.prototype.sayName = function () {
+    console.log(this.name);
+};
+function SubType(name, age) {
+    // 继承属性
+    SuperType.call(this, name);
+    this.age = age;
+}
+// 继承方法
+SubType.prototype = new SuperType();
+SubType.prototype.sayAge = function () {
+    console.log(this.age);
+};
 
+let n = '))';
+let s = '123${n}123123,123';
+let x = s.replace(/\$\{(.*?)\}/g, (match,a,c)=>{
+    console.log(eval(a));
+    return eval(a);
+});
+console.log(x);
 
 // function find(arr){
 //     let left = 0;
