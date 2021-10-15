@@ -62,6 +62,9 @@
 9.10 SIM卡发货迭代 在导入文件的时候,展示表格在页面上, 在提交的时候需要和填写数字校验, 产品把校验放在后端, 我提出在前端也可以做校验, 这样可以避免一些很明显的错误, 优化调用接口的次数
 注意代码bug,  导出按钮多次点击问题, 删除二次提醒问题
 
+
+电池发货迭代, 电池资产重构V1.1
+
 新建入库
 
 rem 和 em 单位换算
@@ -72,7 +75,6 @@ for(let i of {})  对象不可迭代
 void 0 返回 undefined  undefined 不是保留字 可以作为变量名
 垃圾回收机制
 如何方式登录刷验证码 : 图形验证码
-
 
 
 每次表单没有的值如何传递? 传空或者不传递
@@ -86,6 +88,14 @@ void 0 返回 undefined  undefined 不是保留字 可以作为变量名
 良渚文化公园
 植物园
 
+物流供应商应用&物流处理能力升级
+    http://wiki.cheyaoshicorp.com/pages/viewpage.action?pageId=256162346
+    https://hellobike.yuque.com/vo6hf0/stklqi/nbfw99
+    https://jira.hellobike.cn/browse/JETT-773
+    
+电池发货迭代
+附加包
+资产变更类型的下拉列表接口
 
-作废和撤回 没有刷新页面
-审批流程有问题
+bug: 
+移动端点击图片后页面不能动

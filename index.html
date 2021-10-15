@@ -6,37 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .one {
+      video {
+        width: 500px;
+        height: 500px;
+        border: 1px solid #000;
+      }
+      div {
+        background-color: skyblue;
+        font-size: 0;
+      }
+      /* .p {
         width: 300px;
         height: 300px;
-        display: flex;
-        background-color: #ffc0cb;
-      }
-      .two {
-        width: 100px;
-        height: 100px;
-        background-color: blanchedalmond;
-      }
-      .three {
-        width: 100px;
-        height: 100px;
         background-color: skyblue;
-        align-self: center;
-      }
-      .four {
-        width: 100px;
-        height: 100px;
-        background-color: violet;
-        align-self: flex-end;
-      }
+        display: flex;
+        flex-direction: column;
+      } */
     </style>
   </head>
   <body>
-    <div class="one">
+    <div class="p">
+      <video src="./assets/video/天外来物.mp4"></video>
+      <video src="./assets/video/天外来物.mp4"></video>
+      <video src="./assets/video/天外来物.mp4"></video>
+      <video src="./assets/video/天外来物.mp4"></video>
+      <!-- <div class="one"></div>
       <div class="two"></div>
-      <div class="three"></div>
-      <div class="four"></div>
+      <div class="three"></div> -->
     </div>
-    <script src="./index.js"></script>
+    <script>
+      let a = ["a", "b", "c", "d"];
+      let b = {
+        z: 1,
+      };
+      for (let i of b) {
+        console.log(i);
+      }
+    </script>
   </body>
 </html>
