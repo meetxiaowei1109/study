@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="https://unpkg.com/vue@next"></script>
+  <style>
+  </style>
+</head>
+
+<body>
+  <div id="counter">
+    <ul>
+      <li v-for="item in obj.x">
+        {{item}}
+      </li>
+    </ul>
+    <button v-on:click="add">添加</button>
+  </div>
+  <script>
+    const Counter = {
+      data() {
+        return {
+          counter: 0,
+          obj: {
+            x: {
+              a: 'a',
+              b: 'b',
+            }
+          }
+        }
+      },
+      methods: {
+        add() {
+          this.obj.x.c = 'd';
+        }
+      },
+    }
+
+    Vue.createApp(Counter).mount('#counter')
+    // 12312
+    // let a = [2, 1, 4, 8, 5, 7, 6, 3, 2, 3];
+    // function quickSort(arr) {
+    //   let start = arr[0];
+    //   let low = 0;
+    //   let high = a.length - 1;
+    //   while (low != high) {}
+    // }
+    // 如何求有n个元素的无序数组的最小k个数
+
+    // 注意这段代码要在浏览器中运行, xhr
+    // let file = document.querySelector("input");
+    // let formData = new FormData();
+    // file.addEventListener("change", (e) => {
+    //   console.log(e.target.files);
+    //   formData.append("file", file);
+    // });
+    // function send() {
+    //   var xhr = new XMLHttpRequest();
+    //   xhr.setRequestHeader("Content-type", "application/formdata");
+    //   xhr.open("post", "http://localhost:5500");
+    //   xhr.send(formData);
+    //   xhr.onreadystatechange = function () {
+    //     if (xhr.readyState == 4 && xhr.status == 200) {
+    //       console.log(xhr.responseText);
+    //     }
+    //   };
+    // }
+
+    // async function async1() {
+    //   console.log('async1 start');
+    //   await async2();
+    //   console.log('async1 end');
+    // }
+
+    // async function async2() {
+    //   console.log('async2');
+    // }
+
+    // console.log('start');
+    // async1();
+    // console.log('end');
+  </script>
+</body>
+
+</html>

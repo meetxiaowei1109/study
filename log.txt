@@ -1,0 +1,41 @@
+7.21 记录一下心得  "{a:1}" 如何转为一个正常的object对象,使用 new Function('return {a:1}')
+    v-html 会引起xss攻击
+7.22 JSON字符串上色
+
+8.10
+    宙斯项目
+        目录树的删除功能,给没有权限的文件夹去掉删除选项  ----> 改成无权删除  给用户良好的提示
+        用户console.log(日志), 程序运行日志分为error和info两个文件, 文件太大需要分割和日志的清理
+        用户切换不同的服务
+8.11 
+    业务:
+        物流 车辆管理 
+        车辆管理查询页面, 新建车辆页面
+
+8.12 winston 打印日志,学习了winston打日志,分割日志
+     业务: 修改业务显示hover为全部
+
+8.16 
+    车联管理 增加选项配置文件
+
+
+工单系统 https://ticket.hellobike.cn/#/istarted  申请wiki
+工时查看 https://metis2.hellobike.cn/research/worklog/list
+
+https://registry.npm.taobao.org/
+http://nodepackages.hellobike.cn:4873/
+
+git branch -a 查看所有分支
+git fetch 同步分支
+npm config set registry http://registry.npmjs.org
+
+
+全选表示勾选当前页面（支持分页勾选）所有模块化BOM
+位号校验
+
+删除二次确认
+
+不可以输入0,1 只能输入2以上
+箭头问题上不去  只能下来
+
+ifconfig | grep "inet"
