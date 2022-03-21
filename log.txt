@@ -29,11 +29,27 @@ git branch -a 查看所有分支
 git fetch 同步分支
 npm config set registry http://registry.npmjs.org
 
-
-全选表示勾选当前页面（支持分页勾选）所有模块化BOM
 位号校验
+批量转交按钮 权限控制
 
-删除二次确认
+详情页
+新建模块 : /bom/module/createBom
+触发变更BOM: /bom/module/trigger
+批量转交:  /bom/module/batchTransfer
+查看:  /bom/module/detail
+编辑:  /bom/module/edit
+作废:  /bom/module/toVoid
+转交:  /bom/module/transfer
+删除:  /bom/module/remove
+
+查看页
+操作日志:  /bom/module/log
+
+编辑页
+保存: /bom/module/save
+保存并生效: /bom/module/saveEffect
+操作日志:  /bom/module/log
+
 
 不可以输入0,1 只能输入2以上
 箭头问题上不去  只能下来
