@@ -19,8 +19,26 @@
     车联管理 增加选项配置文件
 
 
+3.23 需求提测, 产生了两个bug, 一个是因为合并单元格列数错误. 一个是因为误删一行代码
+
+3.30 转到新部门第一天, 让我先熟悉熟悉代码, 项目中很多地方使用了tsx + compositionAPI , 自己去复习看了typescript 文档.
+3.31 继续学习前端的基础知识  es6 的一些知识让自己的代码更简洁
+4.1  在调用接口的地方, 需要加上接口文档地址 方便溯源
+
+4.8 可选链操作符
+4.13 修改应付单列表和付款单列表迭代需求
+    tsx 语法中渲染的时候 通过{a:1,b:2}['a'] 不用判断快速获取; 
+4.14 完成 凭证推送记录列表
+  前端传给后端的字段 别想着删除 直接置为undefined  JSON转会过滤掉
+4.15 查漏补缺 凭证推送记录列表
+
+付款单列表修改点8 结算单号 -> 点击支持<a>标签锚点跳转
+
+
 工单系统 https://ticket.hellobike.cn/#/istarted  申请wiki
 工时查看 https://metis2.hellobike.cn/research/worklog/list
+权限平台 https://pivotauth.hellobike.cn/home
+波塞冬 https://poseidon.hellobike.cn/#/
 
 https://registry.npm.taobao.org/
 http://nodepackages.hellobike.cn:4873/
@@ -29,29 +47,47 @@ git branch -a 查看所有分支
 git fetch 同步分支
 npm config set registry http://registry.npmjs.org
 
-位号校验
-批量转交按钮 权限控制
-
-详情页
-新建模块 : /bom/module/createBom
-触发变更BOM: /bom/module/trigger
-批量转交:  /bom/module/batchTransfer
-查看:  /bom/module/detail
-编辑:  /bom/module/edit
-作废:  /bom/module/toVoid
-转交:  /bom/module/transfer
-删除:  /bom/module/remove
-
-查看页
-操作日志:  /bom/module/log
-
-编辑页
-保存: /bom/module/save
-保存并生效: /bom/module/saveEffect
-操作日志:  /bom/module/log
-
-
-不可以输入0,1 只能输入2以上
-箭头问题上不去  只能下来
+const name = obj?.name;
 
 ifconfig | grep "inet"
+
+权限 localStorage admin 1
+
+FormBuilder  必选项 的clearable
+FormBuilder v-model.number
+
+
+业财项目中有两个组件，FormBuilder、EnhanceTable 和一个 axios-ts
+FormBuilder 暂时应该没啥要打磨的了（感兴趣研究下怎么用的，怎么实现的）
+
+EnhanceTable 有两个点我也没打磨到细致
+1. 依赖 axios-ts，那么就涉及到入参、出参格式问题；这点有点耦合，
+一时半会儿也没有好的点子或者说一时半会也没啥问题，在业财中用着没啥问题的；
+要是迁移到其他系统去用，那么如何解耦是个问题
+
+2. EnhanceTable 的自动分页管理是强依赖前后端字段约定的，
+有时候后台因为换了系统可能数据格式就对不上了；目前是在 onRequest、onResponse 里面做的拦截处理，
+但是 ts 警告看着不得劲儿；这个问题可以考虑考虑怎么再优化优化
+
+基建技术方面（看个人爱好）
+我们现在项目用的是 vite；我手动集成进来的
+后期想做个 vscode 的 vite 集成插件，这个可能顺便帮到其他组集成 vite
+
+工作中业务需求，刚开始可能是一天的活儿，但是经过个把两个月下的
+要能想办法降到 0.8 ~ 0.5 天，这是个大方向；要花心思思考什么地方能省时间
+
+先看看组件怎么封装的，组件还有哪些改进空间
+之后碰到新的需求还需要补充哪些组件来节约时间
+
+
+你想个事儿，我们有没有必要做个轻量级的类似于波塞冬的东西
+针对我们项目，兼容性要好，比如 vue2、vue3、react 都要兼容掉
+不做复杂功能，只满足我们业财的功能即可；就嵌入到我们业财的项目中
+甚至交互我们也从简，不做太复杂；接受一定量的编码，半手动半自动；
+不要全自动的那种，那种没法加 TS
+有没有可能暴露一部分给不会前端的后台能改一部分逻辑
+就是说他们小的迭代我们不管了
+这是个思考的东西，可以慢慢想
+比如用组件用多了，像 EnhanceTable、FormBuilder 这两个；
+有一天你会用烦了，你发现 render 返回的 JSX 标签是固定的，就是配置字段和校验逻辑、接口请求不一样，
+那么有可能就把 JSX 标签“固化掉”，对外暴露逻辑功能，支持自由组装逻辑
