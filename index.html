@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        /* 创建爱心容器 */
-        .heart{
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            background-color: transparent;
-            margin:300px 300px ;
-            /* 旋转45度 */
-            transform: rotate(45deg);
-            transition: all 2s ease;
-        }
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
 
-        /* 伪元素公共样式*/
-        .heart::before,.heart::after{
-            position: absolute;
-            content: '';
-            display: block;
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            transform: rotate(45deg);
-        }
-
-        .heart::after{
-            top: 0px;
-            left: -100px;
-            background-color: rgb(199, 34, 141);
-        }
-       
-        .heart::before{
-            background-color:rgb(199, 34, 141);
-            top: -100px;
-            left:0px,
-        }
-        .heart:hover {transform: scale(2) rotate(45deg);
-        
-
-        } 
-    </style>
+  </style>
 </head>
+
 <body>
-    <div class="heart"></div>
+  <script>
+    function hasCycle(head) {
+      // write code here
+      let cur1 = head;
+      let cur2 = head;
+
+      let flag = false;
+
+      while (cur2 !== null) {
+        if (cur2 === cur1) {
+          flag = true;
+        }
+        cur1 = cur1.next;
+        cur2 = cur2.next.next;
+      }
+      return flag;
+    }
+    let p1 = {
+      val: 1,
+      next: {
+        val: 3,
+        next: {
+          val: 5,
+          next: null,
+        }
+      }
+    }
+    let p2 = {
+      val: 2,
+      next: {
+        val: 4,
+        next: {
+          val: 6,
+          next: null,
+        }
+      }
+    }
+    console.log(Merge({ val: 1, next: null }, { val: 2, next: null }))
+  </script>
 </body>
+
 </html>

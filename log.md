@@ -32,55 +32,54 @@
   前端传给后端的字段 别想着删除 直接置为undefined  JSON转会过滤掉
 4.15 查漏补缺 凭证推送记录列表
 
+4.18 完成SCM支持查看结算明细详情页
+4.19 应付和付款单管理后台上线 
+     继续SCM支持查看结算明细详情页
+
+4.20 完成两个select列表展示ID和name
+     继续完成供应链结算付款应付 撤回逻辑(等待后端修改)
+     清结算全链路自助查询
+     JSX, 插槽 scopedSlots: {label: () => <span>申请方式</span>},
+
+4.21 继续完成清结算全链路自助查询   
+     弹窗关闭刷新页面 bug
+
+4.22 修改供应链旧应用下线迁移专项计划 展示信息, 修改撤回弹窗组件
+
+4.24 完成清结算全链路自助查询两个页面 等待联调
+      完成通用下载功能前端页面
+      完成应收应付V1.4-管理后台优化 前端页面
+
+新需求完成顺序: prd --> jira --> 拉取项目master --> 新建分支(在做需求的时候一定要从master新建分支)
+             --> 完成代码 -->拉取 master -->发fat,uat,pre,pro
+列表的数据 注意枚举的转换
+页面操作后是否关闭弹窗刷新页面
+删除二次确认
+
 付款单列表修改点8 结算单号 -> 点击支持<a>标签锚点跳转
 
-
-工单系统 https://ticket.hellobike.cn/#/istarted  申请wiki
-工时查看 https://metis2.hellobike.cn/research/worklog/list
-权限平台 https://pivotauth.hellobike.cn/home
-波塞冬 https://poseidon.hellobike.cn/#/
-菜单权限配置 https://config.hellobike.cn/
-
-https://registry.npm.taobao.org/
-http://nodepackages.hellobike.cn:4873/
-
-git branch -a 查看所有分支
-git fetch 同步分支
-npm config set registry http://registry.npmjs.org
-
-const name = obj?.name;
-
-ifconfig | grep "inet"
-
+billId: billCode
 权限 localStorage admin 1
 
 FormBuilder  必选项 的clearable
 FormBuilder v-model.number
 
-
 业财项目中有两个组件，FormBuilder、EnhanceTable 和一个 axios-ts
 FormBuilder 暂时应该没啥要打磨的了（感兴趣研究下怎么用的，怎么实现的）
-
 EnhanceTable 有两个点我也没打磨到细致
 1. 依赖 axios-ts，那么就涉及到入参、出参格式问题；这点有点耦合，
 一时半会儿也没有好的点子或者说一时半会也没啥问题，在业财中用着没啥问题的；
 要是迁移到其他系统去用，那么如何解耦是个问题
-
 2. EnhanceTable 的自动分页管理是强依赖前后端字段约定的，
 有时候后台因为换了系统可能数据格式就对不上了；目前是在 onRequest、onResponse 里面做的拦截处理，
 但是 ts 警告看着不得劲儿；这个问题可以考虑考虑怎么再优化优化
-
 基建技术方面（看个人爱好）
 我们现在项目用的是 vite；我手动集成进来的
 后期想做个 vscode 的 vite 集成插件，这个可能顺便帮到其他组集成 vite
-
 工作中业务需求，刚开始可能是一天的活儿，但是经过个把两个月下的
 要能想办法降到 0.8 ~ 0.5 天，这是个大方向；要花心思思考什么地方能省时间
-
 先看看组件怎么封装的，组件还有哪些改进空间
 之后碰到新的需求还需要补充哪些组件来节约时间
-
-
 你想个事儿，我们有没有必要做个轻量级的类似于波塞冬的东西
 针对我们项目，兼容性要好，比如 vue2、vue3、react 都要兼容掉
 不做复杂功能，只满足我们业财的功能即可；就嵌入到我们业财的项目中
