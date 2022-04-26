@@ -28,7 +28,12 @@
   [branch]scm release/ww0406
   应收单导出增加字段
   [wiki](http://wiki.cheyaoshicorp.com/pages/viewpage.action?pageId=264057701)
-
+3.  应收应付V1.4-管理后台优化 1.5d
+  [status]27晚上线 已提测
+  [branch] release/ww0425
+  [yuque](https://hellobike.yuque.com/docs/share/dc4fd5c1-f5ba-4da5-a3a9-5486da8dc1e6?#)
+  [jira](https://jira.hellobike.cn/browse/ALADDIN-4898)
+  [yapi]
 ### 开发中
 1. 2022.04 清结算全链路自助查询 4d - 1d = 3d
   [status]等待联调 4.27 上线
@@ -44,15 +49,20 @@
   [branch] clear release/ww0424
   [yuque](https://hellobike.yuque.com/hb3fga/newbie/mc33f5)
   [jira](https://jira.hellobike.cn/browse/ALADDIN-4295)
-
-3. 应收应付V1.4-管理后台优化 1.5d
-  [status]27晚上线 等待联调
-  [branch]
-  [yuque](https://hellobike.yuque.com/docs/share/dc4fd5c1-f5ba-4da5-a3a9-5486da8dc1e6?#)
-  [jira](https://jira.hellobike.cn/browse/ALADDIN-4898)
-  [yapi]
+  [yapi]账单列表下载 https://yapi.hellobike.cn/project/2554/interface/api/250401
+  [yapi]结算单列表下载 https://yapi.hellobike.cn/project/2554/interface/api/250407
+  [yapi]账单明细范围下载 https://yapi.hellobike.cn/project/2554/interface/api/250419
+  [yapi]付款单列表下载 https://yapi.hellobike.cn/project/2554/interface/api/250422
+3.
 ### 等待开发
-1. 
+1. 景交车接入清结算
+  [status]
+  [branch]
+  [yuque]https://hellobike.yuque.com/hb3fga/newbie/gd3st9
+  [wiki]
+  [jira]https://jira.hellobike.cn/browse/ALADDIN-4964
+  [yapi]
+
 
   [status]
   [branch]
