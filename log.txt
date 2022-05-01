@@ -29,6 +29,8 @@ git branch -a 查看所有分支
 git fetch 同步分支
 npm config set registry http://registry.npmjs.org
 
+https://github.com/react-visual-design/react-visual-design
+
 位号校验
 批量转交按钮 权限控制
 
