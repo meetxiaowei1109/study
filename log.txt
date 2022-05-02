@@ -1,0 +1,59 @@
+7.21 记录一下心得  "{a:1}" 如何转为一个正常的object对象,使用 new Function('return {a:1}')
+    v-html 会引起xss攻击
+7.22 JSON字符串上色
+
+8.10
+    宙斯项目
+        目录树的删除功能,给没有权限的文件夹去掉删除选项  ----> 改成无权删除  给用户良好的提示
+        用户console.log(日志), 程序运行日志分为error和info两个文件, 文件太大需要分割和日志的清理
+        用户切换不同的服务
+8.11 
+    业务:
+        物流 车辆管理 
+        车辆管理查询页面, 新建车辆页面
+
+8.12 winston 打印日志,学习了winston打日志,分割日志
+     业务: 修改业务显示hover为全部
+
+8.16 
+    车联管理 增加选项配置文件
+
+
+工单系统 https://ticket.hellobike.cn/#/istarted  申请wiki
+工时查看 https://metis2.hellobike.cn/research/worklog/list
+
+https://registry.npm.taobao.org/
+http://nodepackages.hellobike.cn:4873/
+
+git branch -a 查看所有分支
+git fetch 同步分支
+npm config set registry http://registry.npmjs.org
+
+https://github.com/react-visual-design/react-visual-design
+
+位号校验
+批量转交按钮 权限控制
+
+详情页
+新建模块 : /bom/module/createBom
+触发变更BOM: /bom/module/trigger
+批量转交:  /bom/module/batchTransfer
+查看:  /bom/module/detail
+编辑:  /bom/module/edit
+作废:  /bom/module/toVoid
+转交:  /bom/module/transfer
+删除:  /bom/module/remove
+
+查看页
+操作日志:  /bom/module/log
+
+编辑页
+保存: /bom/module/save
+保存并生效: /bom/module/saveEffect
+操作日志:  /bom/module/log
+
+
+不可以输入0,1 只能输入2以上
+箭头问题上不去  只能下来
+
+ifconfig | grep "inet"
