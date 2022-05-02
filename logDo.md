@@ -16,7 +16,7 @@
 1. 2022.04 供应链旧应用下线迁移专项计划
   [status]开发完成 fat中, 21 已提测
   [branch]scm release/ww0406
-  [yuque](https://hellobike.yuque.com/vo6hf0/gydhg1/mr7nm4)
+  [yuque](https://hellobike.yuq ue.com/vo6hf0/gydhg1/mr7nm4)
 
 2. 2022.04 4月日常迭代 2.5d (出了一个bug, 撤回成功后未关闭弹窗, 重新刷新页面)
   [status] 开发完成, 4.21之前开发完成, 已提测
@@ -28,6 +28,7 @@
   [branch]scm release/ww0406
   应收单导出增加字段
   [wiki](http://wiki.cheyaoshicorp.com/pages/viewpage.action?pageId=264057701)
+
 3.  应收应付V1.4-管理后台优化 1.5d
   [status]27晚上线 已提测
   [branch] release/ww0425
@@ -42,7 +43,9 @@
   [yapi](https://yapi.hellobike.cn/project/2554/interface/api/249732)
   [yapi](https://yapi.hellobike.cn/project/2554/interface/api/249804)
   [jira](https://jira.hellobike.cn/browse/ALADDIN-4706)
-
+<!-- JZ-CG-ST1DCJ-20201120-001(LX) -->
+<!-- 业务订单号：TJJHBB-CG-TJJH-20220315-001(PC) -->
+<!-- 入库/发货单号：sn_20220317821693101696307200 -->
 2. 2022.04.22 通用下载功能(账单导出功能/清分明细导出功能/结算单导出功能/付款单导出功能) 加的提示 一定要用户点击确定 
   1.5d - 1d
   [status] 4.28上pre

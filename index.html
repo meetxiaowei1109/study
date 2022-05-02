@@ -9,39 +9,56 @@
         content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
+    /* 创建爱心容器 */
+    .heart {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+      margin: 300px 300px;
+      /* 旋转45度 */
+      transform: rotate(45deg);
+      transition: all 2s ease;
+    }
+
+    .heart::before,
+    .heart::after {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      transform: rotate(45deg);
+    }
+
+    .heart::after {
+      top: 0px;
+      left: -100px;
+      background-color: pink;
+    }
+
+    .heart::before {
+      background-color: pink;
+      top: -100px;
+      left: 0px,
+    }
+
+    .heart:hover {
+      transform: scale(2) rotate(45deg);
+
+
+    }
   </style>
 </head>
 
 <body>
-  <a href="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F1113%2F052420110515%2F200524110515-2-1200.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653473479&t=cf6679dfa1e42b1fc464ffcadc5a8719"
-     download>1111</a>
-  <script>
-    const fileChange = (e) => {
-      const file = e.target.files[0];
-      const reader = new FileReader();
-      reader.onload = function () {
-
-      }
-    }
-
-    function hasCycle(head) {
-      // write code here
-      let cur1 = head;
-      let cur2 = head;
-
-      let flag = false;
-
-      while (cur2 !== null) {
-        if (cur2 === cur1) {
-          flag = true;
-        }
-        cur1 = cur1.next;
-        cur2 = cur2.next.next;
-      }
-      return flag;
-    }
-  </script>
+  <div class="heart"></div>
 </body>
 
 </html>
