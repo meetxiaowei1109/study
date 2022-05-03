@@ -3,10 +3,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible"
-        content="IE=edge">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
 
@@ -14,13 +12,12 @@
 </head>
 
 <body>
-  <a href="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F1113%2F052420110515%2F200524110515-2-1200.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653473479&t=cf6679dfa1e42b1fc464ffcadc5a8719"
-     download>1111</a>
+  <a href="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.jj20.com%2Fup%2Fallimg%2F1113%2F052420110515%2F200524110515-2-1200.jpg&refer=http%3A%2F%2Fimg.jj20.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653473479&t=cf6679dfa1e42b1fc464ffcadc5a8719" download>1111</a>
   <script>
     const fileChange = (e) => {
       const file = e.target.files[0];
       const reader = new FileReader();
-      reader.onload = function () {
+      reader.onload = function() {
 
       }
     }
@@ -40,6 +37,19 @@
         cur2 = cur2.next.next;
       }
       return flag;
+    }
+
+    const res = {
+      "name": "select",
+      "formProps": { "colon": true, "layout": "horizontal", "labelCol": { "span": 6, "offset": 0 }, "preserve": true, "labelAlign": "right", "wrapperCol": { "span": 16, "offset": 0 }, "requiredMark": true, "validateTrigger": "onChange", "scrollToFirstError": false },
+      "schemaList": [{
+        "id": "1651483309534",
+        "type": "select",
+        "configs": { "postman": { "url": "http://localhost:3000/users/getStatus", "data": [], "method": "post", "params": [], "propName": "options", "responseNamepath": "RESPONSE." }, "itemProps": { "name": "select6p3", "label": "选项", "rules": [{ "message": "请选择！", "required": true }], "hidden": false, "noStyle": false, "trigger": "onChange" }, "inputProps": { "options": [{ "label": "A", "value": 1 }, { "label": "B", "value": 2 }], "virtual": true, "bordered": true, "disabled": false, "autoFocus": false, "showArrow": true, "allowClear": false, "listHeight": 256, "showSearch": false, "defaultOpen": false, "placeholder": "请选择", "filterOption": true, "optionFilterProp": "value", "autoClearSearchValue": true, "defaultActiveFirstOption": true, "dropdownMatchSelectWidth": true } },
+        "currentItemValue": null,
+        "needDefineGetterProps": {}
+      }],
+      "description": "select"
     }
   </script>
 </body>
