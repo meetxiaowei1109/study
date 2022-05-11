@@ -60,6 +60,7 @@
   [yapi](https://yapi.hellobike.cn/project/2554/interface/api/249732)
   [yapi](https://yapi.hellobike.cn/project/2554/interface/api/249804)
   [jira](https://jira.hellobike.cn/browse/ALADDIN-4706)
+  [增加需求] 交易订单号 --> 采购单号
 <!-- JZ-CG-ST1DCJ-20201120-001(LX) -->
 <!-- 业务订单号：TJJHBB-CG-TJJH-20220315-001(PC) -->
 <!-- 入库/发货单号：sn_20220317821693101696307200 -->
@@ -72,8 +73,9 @@
   [jira](https://jira.hellobike.cn/browse/ALADDIN-4964)
   [yapi]
 
-3. 资金看板V1.2-余额获取功能优化
-  [status]
+3. 资金看板V1.2-余额获取功能优化 5d
+  返回文件为csv  实际为xlsx  导入功能走的老逻辑吗？
+  [status] 开发中， 上线时需要配置菜单
   [branch]
   [yuque](https://hellobike.yuque.com/hb3fga/newbie/gzevzp)
   [wiki]
