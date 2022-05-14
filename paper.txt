@@ -1,0 +1,11 @@
+1.Sahinaslan，E.“物联网：安全、威胁和控制”，AIP会议记录2086，030035 (2019);https://doi.org/10.1063/1.5095120
+2.桑蒂斯，C.低代码开发如何帮助公司提高生产力，2020年5月12日，https://blog.pillir.io/edgeucation-center/how-low-code-helps-companies-increase-productivity，2020
+3.Rossi，B.“低谷：为什么首席信息官应该关心低代码——信息时代”，https://www.information-age.com/down-low-why-cios-should-care-about-low-code-123459895/
+4.Rob，M.“低代码开发如何加速软件交付——SD时代”SD时报.存储区域网络迭戈时报，2014
+5.理查森，C;Rymer，J.R.面向客户的应用出现了新的开发平台;弗雷斯特:美国马萨诸塞州剑桥，2014年.
+6.Lehmann，C.智能过程自动化和数字自动化平台的出现，Rethat，https://www.redhat.com/cms/managed-files/mi-451-research-intelligent-process-automation-analyst-paper-f11434-201802.2018年pdf，查阅日期:2020年7月
+7.桑切斯，R波尔，R企业恢复力评估-A定量性的方法可持续性2019、114327
+8.SetXRM，https://www.setxrm.com/hakkimizda/，访问日期：2020年7月
+9.SetXRM，https://www.setxrm.com/sektorler/，访问日期：2020年7月
+10.Vincent，P.，Iijima，K.，Driver，M.，Wong，J.，Natis，Y.，企业低代码幻方图ApplicationPlatform，2019年8月8日出版，再版https://www.gartner.com/doc/reprints?id=1-1XQ92DO5&ct=191105&st=sb，2019年，访问日期：2020年7月
+11.Sahinaslan，E.，“工业4.0转型：新技术和机遇”，第一国际Şişli科学大会，2019年，伊斯坦布尔Şişli高等教育职业学校，2019年10月24日至25日，土耳其伊斯坦布尔
