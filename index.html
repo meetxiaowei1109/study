@@ -6,146 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-    }
-
-    /* 创建爱心容器 */
-    .heart {
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      background-color: pink;
-      margin: 300px 300px;
-      /* 旋转45度 */
-      transform: rotate(45deg);
-      transition: all 2s ease;
-    }
-
-    .heart::before,
-    .heart::after {
-      position: absolute;
-      content: '';
-      display: block;
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      transform: rotate(45deg);
-    }
-
-    .heart::after {
-      top: 0px;
-      left: -100px;
-      background-color: pink;
-    }
-
-    .heart::before {
-      background-color: pink;
-      top: -100px;
-      left: 0px,
-    }
-
-    <<<<<<< HEAD const res= {
-
-      "name": "select",
-      "formProps": {
-
-        "colon": true,
-        "layout": "horizontal",
-        "labelCol": {
-          "span": 6, "offset": 0
-        }
-
-        ,
-        "preserve": true,
-        "labelAlign": "right",
-        "wrapperCol": {
-          "span": 16, "offset": 0
-        }
-
-        ,
-        "requiredMark": true,
-        "validateTrigger": "onChange",
-        "scrollToFirstError": false
-      }
-
-      ,
-      "schemaList": [ {
-
-        "id": "1651483309534",
-        "type": "select",
-        "configs": {
-          "postman": {
-            "url": "http://localhost:3000/users/getStatus", "data": [], "method": "post", "params": [], "propName": "options", "responseNamepath": "RESPONSE."
-          }
-
-          ,
-          "itemProps": {
-
-            "name": "select6p3",
-            "label": "选项",
-            "rules": [ {
-              "message": "请选择！", "required": true
-            }
-
-            ],
-            "hidden": false,
-            "noStyle": false,
-            "trigger": "onChange"
-          }
-
-          ,
-          "inputProps": {
-            "options": [ {
-              "label": "A", "value": 1
-            }
-
-            ,
-              {
-              "label": "B", "value": 2
-            }
-
-            ],
-            "virtual": true,
-            "bordered": true,
-            "disabled": false,
-            "autoFocus": false,
-            "showArrow": true,
-            "allowClear": false,
-            "listHeight": 256,
-            "showSearch": false,
-            "defaultOpen": false,
-            "placeholder": "请选择",
-            "filterOption": true,
-            "optionFilterProp": "value",
-            "autoClearSearchValue": true,
-            "defaultActiveFirstOption": true,
-            "dropdownMatchSelectWidth": true
-          }
-        }
-
-        ,
-        "currentItemValue": null,
-        "needDefineGetterProps": {}
-      }
-
-      ],
-      "description": "select"
-    }
-
-    </script>=======.heart:hover {
-      transform: scale(2) rotate(45deg);
-
-
-    }
-  </style>
 </head>
 
 <body>
-  <div class="heart"></div>
-  >>>>>>> 2177f5d35891698ee3b37fb1da0800365cce4598
+  <input type="text">
+  <script>
+    document.querySelector('input').onchange = (e) => {
+      e.target.value = e.target.value.replace(/\D+/)
+    }
+  </script>
 </body>
 
 </html>
