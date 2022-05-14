@@ -11,9 +11,15 @@
 </head>
 
 <body>
-  <input type="tel"
-         name="phone"
-         autocomplete="false">
+  <script>
+    const a = { a: 1, b: 2 }
+    function fn({ ...p }) {
+      p.a = 3;
+      return p;
+    }
+    const x = fn(a);
+    console.log(a, x);
+  </script>
 </body>
 
 </html>
