@@ -53,17 +53,24 @@
 
 3. 
 ### 开发中
-1. 2022.04 清结算全链路自助查询 4d - 1d = 3d
+1. 2022.04 清结算全链路自助查询 4d - 1d = 3d, 收单信息是表单  其他事表格
+  [menuConfig]看板菜单，流水菜单配置
   [status]联调中
   [branch]clear release/ww0420
   [yuque](https://hellobike.yuque.com/hb3fga/newbie/iwa6zg)
   [yapi](https://yapi.hellobike.cn/project/2554/interface/api/249732)
   [yapi](https://yapi.hellobike.cn/project/2554/interface/api/249804)
   [jira](https://jira.hellobike.cn/browse/ALADDIN-4706)
-  [增加需求] 交易订单号 --> 采购单号
+  [增加需求] 交易订单号 --> 采购单号 已做
+  [增加需求] 业务线不要初始值 已做
+  [增加需求] 收单信息 时间 已做
+  [增加需求] 小伟，这边如果查询的时候 报错的话，下面的数据清理掉吧
 <!-- JZ-CG-ST1DCJ-20201120-001(LX) -->
 <!-- 业务订单号：TJJHBB-CG-TJJH-20220315-001(PC) -->
 <!-- 入库/发货单号：sn_20220317821693101696307200 -->
+
+<!-- HELLO_EXPRESSCAR -->
+<!-- TP20220126114955200000100030024 -->
 
 2. 景交车接入清结算， 业务场景加一项，新建选择新的业务场景，合同不要了
   [status] 1d-1d 等待联调
@@ -74,13 +81,16 @@
   [yapi]
 
 3. 资金看板V1.2-余额获取功能优化 5d
-  返回文件为csv  实际为xlsx  导入功能走的老逻辑吗？
+  [menuConfig]看板菜单，流水菜单配置
   [status] 开发中， 上线时需要配置菜单
   [branch]
   [yuque](https://hellobike.yuque.com/hb3fga/newbie/gzevzp)
   [wiki]
   [jira](https://jira.hellobike.cn/browse/ALADDIN-4843)
-  [yapi]
+  [yapi](https://hellobike.yuque.com/mqxgv1/hc72hk/se5bt5#j1F4E)
+  [增加需求] 余额同步, 导出成功修改提示 已做
+  [增加需求] 账户管理页面 增加字段 
+  [增加需求] 时间格式化为年月日 已做
 ### 等待开发
 1. 
 
