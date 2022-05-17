@@ -57,3 +57,6 @@ https://github.com/react-visual-design/react-visual-design
 箭头问题上不去  只能下来
 
 ifconfig | grep "inet"
+
+
+本研究基于对新一代低端代码之一SetXRM平台的研究有助于产生更灵活和短期解决方案的应用程序，以满足客户日益增长的软件需求企业
