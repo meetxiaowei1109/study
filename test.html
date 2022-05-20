@@ -10,14 +10,13 @@
 
 <body>
   <div id="app">
-    <button @click="sayHi">{{msg}}</button>
-
     <input type="button"
            value="浪起来"
-           @click="lang()">
+           @click="lang">
     <input type="button"
            value="低调"
-           @click="stop()">
+           @click="stop">
+    {{msg}}
   </div>
   <script src="./vue.min.js"></script>
   <script>
@@ -42,9 +41,6 @@
         stop() {
           clearInterval(this.intervalId)
           this.intervalId = null;
-        },
-        sayHi() {
-          alert('hi');
         },
       }
     })
