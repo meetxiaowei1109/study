@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>小米</title>
+  <script>
+    let list = [{
+      id: 1,
+      url: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5713971c4bb6512743dfd06023080268.png?thumb=1&w=400&h=400&f=webp&q=90',
+      title: 'Xiaomi Civi 1S',
+      des: '原生美肌人像｜奇迹阳光动人新色｜骁龙778G Plus',
+      price: 2299,
+      oldPrice: 1880,
+    },
+    {
+      id: 2,
+      url: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5713971c4bb6512743dfd06023080268.png?thumb=1&w=400&h=400&f=webp&q=90',
+      title: 'Redmi Note 11T Pro',
+      des: '原生美肌人像｜奇迹阳光动人新色｜骁龙778G Plus',
+      price: 2299,
+      oldPrice: 1880,
+    },
+    {
+      id: 3,
+      url: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5713971c4bb6512743dfd06023080268.png?thumb=1&w=400&h=400&f=webp&q=90',
+      title: 'Xiaomi Civi 1S',
+      des: '原生美肌人像｜奇迹阳光动人新色｜骁龙778G Plus',
+      price: 2299,
+      oldPrice: 1880,
+    },
+    {
+      id: 4,
+      url: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5713971c4bb6512743dfd06023080268.png?thumb=1&w=400&h=400&f=webp&q=90',
+      title: 'Redmi K40S',
+      des: '原生美肌人像',
+      price: 2299,
+    },
+    {
+      id: 5,
+      url: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5713971c4bb6512743dfd06023080268.png?thumb=1&w=400&h=400&f=webp&q=90',
+      title: 'Xiaomi Civi 1S',
+      des: '奇迹阳光动人新色｜骁龙778G Plus',
+      price: 2299,
+      oldPrice: 1880,
+    },
+    {
+      id: 6,
+      url: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5713971c4bb6512743dfd06023080268.png?thumb=1&w=400&h=400&f=webp&q=90',
+      title: 'Xiaomi Civi 1S',
+      des: '奇迹阳光动人新色',
+      price: 2299
+    },
+    {
+      id: 7,
+      url: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5713971c4bb6512743dfd06023080268.png?thumb=1&w=400&h=400&f=webp&q=90',
+      title: 'Xiaomi Civi 1S',
+      des: '骁龙778G Plus',
+      price: 2299,
+      oldPrice: 1880,
+    },
+    {
+      id: 8,
+      url: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5713971c4bb6512743dfd06023080268.png?thumb=1&w=400&h=400&f=webp&q=90',
+      title: 'Xiaomi Civi 1S',
+      des: '原生美肌人像｜奇迹阳光动人新色',
+      price: 2299,
+      oldPrice: 1880,
+    }]
+  </script>
+  <style>
+    body {
+      margin: 0;
+
+    }
+
+    .app {
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(245, 245, 245);
+    }
+
+    .goods {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1200px;
+      height: 620px;
+    }
+
+    .desc {
+      width: 200px;
+      margin: 0 10px 10px;
+      height: 18px;
+      font-size: 12px;
+      color: #b0b0b0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .title {
+      margin: 0 10px 2px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #333;
+    }
+
+    .price {
+      margin: 0 10px 14px;
+      text-align: center;
+      color: #ff6700;
+      font-size: 14px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 234px;
+      height: 300px;
+      background-color: #fff;
+      text-align: center;
+      margin-left: 10px;
+      transition: all .5s;
+    }
+
+    .item:hover {
+      transform: translate(0, -5px);
+      box-shadow: 1px 5px 10px #c5c5c5;
+    }
+
+    .item img {
+      width: 160px;
+      height: 160px;
+    }
+
+    del {
+      color: #b0b0b0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <div class="goods">
+    </div>
+  </div>
+  <template id="template">
+    <div class="item">
+      <div class="item-warp">
+        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5713971c4bb6512743dfd06023080268.png?thumb=1&w=400&h=400&f=webp&q=90"
+             alt="">
+        <h3 class="title">Xiaomi Civi 1S</h3>
+        <p class="desc">原生美肌人像｜奇迹阳光动人新色</p>
+        <div class="price">
+          <span>2299元起</span>
+          <del>
+            <span>1880元</span>
+          </del>
+        </div>
+      </div>
+    </div>
+  </template>
+
+
+  <script>
+    let template = document.querySelector('#template');
+    let goods = document.querySelector('.goods');
+
+    list.map(e => {
+      const warp = template.content.children[0].children[0];
+      warp.children[0].src = e.url;
+      warp.children[1].innerText = e.title;
+      warp.children[2].innerText = e.des;
+      warp.children[3].children[0].innerText = `${e.price}元起`;
+      warp.children[3].children[1].children[0].innerText = e.oldPrice || '';
+      goods.appendChild(document.importNode(template.content, true));
+    })
+
+  </script>
+</body>
+
+</html>

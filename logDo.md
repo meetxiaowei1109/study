@@ -46,14 +46,8 @@
   [yapi]结算单列表下载 https://yapi.hellobike.cn/project/2554/interface/api/250407
   [yapi]账单明细范围下载 https://yapi.hellobike.cn/project/2554/interface/api/250419
   [yapi]付款单列表下载 https://yapi.hellobike.cn/project/2554/interface/api/250422
-### 已提测
-1. 
 
-2. 
-
-3. 
-### 开发中
-1. 2022.04 清结算全链路自助查询 5d - 4d = 0d, 收单信息是表单  其他事表格
+7. 2022.04 清结算全链路自助查询 5d - 4d = 0d, 收单信息是表单  其他事表格
   [menuConfig]看板菜单，流水菜单配置
   [status]联调中
   [branch]clear release/ww0420
@@ -65,14 +59,23 @@
   [增加需求] 业务线不要初始值 已做
   [增加需求] 收单信息 时间 已做
   [增加需求] 小伟，这边如果查询的时候 报错的话，下面的数据清理掉吧 已做
-<!-- JZ-CG-ST1DCJ-20201120-001(LX) -->
-<!-- 业务订单号：TJJHBB-CG-TJJH-20220315-001(PC) -->
-<!-- 入库/发货单号：sn_20220317821693101696307200 -->
-<!-- HELLO_EXPRESSCAR -->
-<!-- TP20220126114955200000100030024 -->
+  <!-- JZ-CG-ST1DCJ-20201120-001(LX) -->
+  <!-- 业务订单号：TJJHBB-CG-TJJH-20220315-001(PC) -->
+  <!-- 入库/发货单号：sn_20220317821693101696307200 -->
+  <!-- HELLO_EXPRESSCAR -->
+  <!-- TP20220126114955200000100030024 -->
 
-2. 景交车接入清结算， 业务场景加一项，新建选择新的业务场景，合同不要了
-  [status] 2d-1d 等待联调
+8. 应收单增加款项类型
+  [menuConfig]
+  [status] 开发中 已提测
+  [branch] release/ww0520
+  [yuque] 
+  [wiki] http://wiki.cheyaoshicorp.com/pages/viewpage.action?pageId=302076224
+  [jira]
+  [yapi]
+
+9. 景交车接入清结算， 业务场景加一项，新建选择新的业务场景，合同不要了
+  [status] 2d-2d 等待联调 已提测
   [branch] clear car0506
   [yuque](https://hellobike.yuque.com/hb3fga/newbie/gd3st9)
   [wiki]
@@ -80,10 +83,14 @@
   [yapi]
   [增加需求] 不要城市 已做
   [增加需求] 业务场景缓存问题
+### 已提测
+1. 
+
+2. 
 
 3. 资金看板V1.2-余额获取功能优化 5d
   [menuConfig]看板菜单，流水菜单配置
-  [status] 开发中， 上线时需要配置菜单
+  [status] 开发中， 上线时需要配置菜单 已提测 uat
   [branch] clear board0507
   [yuque](https://hellobike.yuque.com/hb3fga/newbie/gzevzp)
   [wiki]
@@ -94,18 +101,27 @@
   [增加需求] 时间格式化为年月日 已做
   [增加需求] 其他都是左对齐，就当前余额这里变成了右对齐啊 已做
   [增加需求] 总感觉改成“请先选择。。。” 已做
-  [增加需求] 资金看板  滚动到标题(已做)  文字大小还原(已做)  x轴全显示  x轴亮度和虚线一致(已做)  集团去掉(已做)
+  [增加需求] 资金看板  滚动到标题(已做)  文字大小还原(已做)  x轴全显示(已做)  x轴亮度和虚线一致(已做)  集团去掉(已做)
 
-4. 应收单增加款项类型
+4. 
+### 开发中
+1. 
+
+2. 
+
+3. 
+
+4. 
+### 等待开发
+1. 租车-PMS结算接入
   [menuConfig]
-  [status] 开发中
-  [branch] release/ww0520
-  [yuque] 
-  [wiki] http://wiki.cheyaoshicorp.com/pages/viewpage.action?pageId=302076224
+  [status] 等待开发
+  [branch]
+  [yuque](https://hellobike.yuque.com/hb3fga/newbie/hzqq11)
+  [wiki]
   [jira]
   [yapi]
-### 等待开发
-1. 
+  [增加需求]
 
 2. 
   [menuConfig]
