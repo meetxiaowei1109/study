@@ -107,23 +107,31 @@
 
 4. 
 ### 开发中
-1. 
+1. 电商分销价格维护
+  [menuConfig] 需要配置
+  [status] 开发中 6.23,6.24
+  [branch] release/price0620
+  [yuque] (https://hellobike.yuque.com/hb3fga/newbie/zhfbwg)
+  [wiki]
+  [jira] (https://jira.hellobike.cn/browse/ALADDIN-5449)
+  [yapi]
+  [增加需求]
 
-2. 
+2. 商户结算: 账单列表/结算单列表/付款单列表 业务线添加 充值-HELLO_RECHARGE  业务场景为空
+  [menuConfig] 无
+  [status]
+  [branch]
+  [yuque]
+  [wiki]
+  [jira] https://jira.hellobike.cn/browse/ALADDIN-5495
+  [yapi]
+  [增加需求]
 
-3. 
+3. settlementAdmin 重置时间问题
 
 4. 
 ### 等待开发
-1. 租车-PMS结算接入
-  [menuConfig]
-  [status] 等待开发
-  [branch]
-  [yuque](https://hellobike.yuque.com/hb3fga/newbie/hzqq11)
-  [wiki]
-  [jira]
-  [yapi]
-  [增加需求]
+1. 
 
 2. 
   [menuConfig]
