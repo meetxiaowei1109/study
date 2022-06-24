@@ -115,32 +115,27 @@
 
 4. 
 ### 开发中
-1. 
-
-2. 商户结算: 账单列表/结算单列表/付款单列表 业务线添加 充值-HELLO_RECHARGE  业务场景为空
-  [menuConfig] 无
-  [status]
-  [branch]
-  [yuque]
-  [wiki]
+1. 商户结算: 账单列表/结算单列表/付款单列表 业务线添加 充值-HELLO_RECHARGE  业务场景为空
   [jira] https://jira.hellobike.cn/browse/ALADDIN-5495
-  [yapi]
-  [增加需求]
 
-3. settlementAdmin改好了晚上发布顺便发佳旺哥的代码  重置时间问题改好了在含笑的分支上,波塞冬也在含笑的分支上
+2. 规则管理: 合同管理 业务线增加 全网叫车 TAXI  表格增加分成比例
+  [jira]
+
+
+3. 
 
 4. 
 ### 等待开发
-1. 业财(郑双燕): 客商主数据推送NCC/每刻改造
+1. 好物商城接入清结算
   [menuConfig]
   [status]
   [branch]
-  [yuque] (https://hellobike.yuque.com/hb3fga/newbie/nv3agl)
+  [yuque] (https://hellobike.yuque.com/hb3fga/newbie/iynkak)
   [wiki]
-  [jira] (https://jira.hellobike.cn/browse/ALADDIN-5512)
+  [jira]
   [yapi]
-  [增加需求]
-
+  [增加需求] 这个顺便重构掉吧，把我们业财的 BaseInfo 搬过去
+  商户中心   https://fat-mp-login.hellobike.com/   13346181349   验证码 888888
 2. 
   [menuConfig]
   [status]
