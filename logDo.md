@@ -99,7 +99,15 @@
   [增加需求] 总感觉改成“请先选择。。。” 已做
   [增加需求] 资金看板  滚动到标题(已做)  文字大小还原(已做)  x轴全显示(已做)  x轴亮度和虚线一致(已做)  集团去掉(已做)
 ### 已提测
-1. 
+1. 电商分销价格维护 上线需要发布波塞冬
+  [menuConfig] 需要配置
+  [status] 已提测 开发中 6.23,6.24
+  [branch] release/price0620
+  [yuque] (https://hellobike.yuque.com/hb3fga/newbie/zhfbwg)
+  [wiki]
+  [jira] (https://jira.hellobike.cn/browse/ALADDIN-5449)
+  [yapi]
+  [增加需求] 存货成本核算/成本单据管理/财务出入库单管理  增加销售单号 需要发布波塞冬
 
 2. 
 
@@ -107,15 +115,7 @@
 
 4. 
 ### 开发中
-1. 电商分销价格维护
-  [menuConfig] 需要配置
-  [status] 开发中 6.23,6.24
-  [branch] release/price0620
-  [yuque] (https://hellobike.yuque.com/hb3fga/newbie/zhfbwg)
-  [wiki]
-  [jira] (https://jira.hellobike.cn/browse/ALADDIN-5449)
-  [yapi]
-  [增加需求]
+1. 
 
 2. 商户结算: 账单列表/结算单列表/付款单列表 业务线添加 充值-HELLO_RECHARGE  业务场景为空
   [menuConfig] 无
@@ -127,11 +127,19 @@
   [yapi]
   [增加需求]
 
-3. settlementAdmin 重置时间问题
+3. settlementAdmin改好了晚上发布顺便发佳旺哥的代码  重置时间问题改好了在含笑的分支上,波塞冬也在含笑的分支上
 
 4. 
 ### 等待开发
-1. 
+1. 业财(郑双燕): 客商主数据推送NCC/每刻改造
+  [menuConfig]
+  [status]
+  [branch]
+  [yuque] (https://hellobike.yuque.com/hb3fga/newbie/nv3agl)
+  [wiki]
+  [jira] (https://jira.hellobike.cn/browse/ALADDIN-5512)
+  [yapi]
+  [增加需求]
 
 2. 
   [menuConfig]

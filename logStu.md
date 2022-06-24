@@ -18,3 +18,5 @@ ifconfig | grep "inet"
 https://github.com/yu-tou/antd-visual-editor
 https://github.com/unlayer/react-email-editor
 https://github.com/KerryCodes/leggo
+
+// a.filter(e=>e.name==='data').children.map(e=>({[e.name]:e.desc})).forEach(e=>{ x={...x,...e} })
