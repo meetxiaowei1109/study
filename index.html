@@ -3,30 +3,44 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
 
 <body>
-  })
-  }
+  <script>
+    class Person {
+      constructor(name1, name2) {
+        this.name1 = name1;
+        this.name2 = name2;
+      }
 
-  async function fn1() {
-  console.log(7);
-  await fn();
-  fn().resolve();
-  console.log(1);
-  }
+      get fullName() {
+        return `${this.name1} ${this.name2}`
+      }
+    }
 
-  console.log(4);
-  fn1();
-  setTimeout(() => {
-  console.log(6);
-  })
-  console.log(8);
+    class Employee extends Person {
+      constructor(name1, name2, salary) {
+        super(name1, name2);
+        this.salary = salary;
+      }
 
-  // 4 / 7 / 2 / 3 / 9 / 8 / 1 / 6
+      get salary() {
+        return this.salary;
+      }
+
+      // set salary(salary) {
+      //   this.salary = salary;
+      //   console.log("Salary changed for " + this.fullName + " : $" + this.salary);
+      // }
+    }
+
+    const e = new Employee('关', '羽', '500');
+    console.log(e);
 
   </script>
 </body>

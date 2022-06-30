@@ -98,16 +98,24 @@
   [增加需求] 其他都是左对齐，就当前余额这里变成了右对齐啊 已做
   [增加需求] 总感觉改成“请先选择。。。” 已做
   [增加需求] 资金看板  滚动到标题(已做)  文字大小还原(已做)  x轴全显示(已做)  x轴亮度和虚线一致(已做)  集团去掉(已做)
-### 已提测
-1. 电商分销价格维护 上线需要发布波塞冬
+
+11. 电商分销价格维护 上线需要发布波塞冬
   [menuConfig] 需要配置
-  [status] 已提测 开发中 6.23,6.24
+  [status] 6.28 上线 6.27上到了pre 已提测 开发中 6.23,6.24
   [branch] release/price0620
   [yuque] (https://hellobike.yuque.com/hb3fga/newbie/zhfbwg)
   [wiki]
   [jira] (https://jira.hellobike.cn/browse/ALADDIN-5449)
   [yapi]
-  [增加需求] 存货成本核算/成本单据管理/财务出入库单管理  增加销售单号 需要发布波塞冬
+  [增加需求] 存货成本核算/成本单据管理/财务出入库单管理  增加销售单号 需要发布波塞冬(已上线)
+
+12. 商户结算: 账单列表/结算单列表/付款单列表 业务线添加 充值-HELLO_RECHARGE  业务场景为空
+  [jira] https://jira.hellobike.cn/browse/ALADDIN-5495
+
+13. 规则管理: 合同管理 业务线增加 全网叫车 TAXI  表格增加分成比例
+  [jira]
+### 已提测
+1. 
 
 2. 
 
@@ -115,27 +123,35 @@
 
 4. 
 ### 开发中
-1. 商户结算: 账单列表/结算单列表/付款单列表 业务线添加 充值-HELLO_RECHARGE  业务场景为空
-  [jira] https://jira.hellobike.cn/browse/ALADDIN-5495
-
-2. 规则管理: 合同管理 业务线增加 全网叫车 TAXI  表格增加分成比例
+1. 好物商城接入清结算
+  [menuConfig] 需要配置
+  [status] 开发中
+  [branch] AppMallAdminWeb feature/clear0627
+  [yuque] (https://hellobike.yuque.com/hb3fga/newbie/iynkak)
+  [wiki]
   [jira]
+  [yapi]
+  [增加需求] 这个顺便重构掉吧，把我们业财的 BaseInfo 搬过去
+  商户中心   https://fat-mp-login.hellobike.com/   
+  17600000000   验证码888888
+  13346181349   验证码 888888
+
+2. 
 
 
 3. 
 
 4. 
 ### 等待开发
-1. 好物商城接入清结算
+1. 资金平台V1.5-三方账户管理
   [menuConfig]
   [status]
   [branch]
-  [yuque] (https://hellobike.yuque.com/hb3fga/newbie/iynkak)
+  [yuque] (https://hellobike.yuque.com/hb3fga/newbie/ldwve3)
   [wiki]
-  [jira]
+  [jira] (https://jira.hellobike.cn/browse/ALADDIN-5144)
   [yapi]
-  [增加需求] 这个顺便重构掉吧，把我们业财的 BaseInfo 搬过去
-  商户中心   https://fat-mp-login.hellobike.com/   13346181349   验证码 888888
+  [增加需求]
 2. 
   [menuConfig]
   [status]
