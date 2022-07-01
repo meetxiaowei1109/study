@@ -129,7 +129,7 @@
   [branch] AppMallAdminWeb feature/clear0627
   [yuque] (https://hellobike.yuque.com/hb3fga/newbie/iynkak)
   [wiki]
-  [jira]
+  [jira] (https://jira.hellobike.cn/browse/ALADDIN-5383)
   [yapi]
   [增加需求] 这个顺便重构掉吧，把我们业财的 BaseInfo 搬过去
   商户中心   https://fat-mp-login.hellobike.com/   
