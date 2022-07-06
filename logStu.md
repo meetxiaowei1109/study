@@ -4,6 +4,7 @@
 波塞冬 https://poseidon.hellobike.cn/#/
 菜单权限配置 https://config.hellobike.cn/
 发布平台 https://deploy.hellobike.cn/#/webapp
+oss上传平台 http://carfee-utils.hellobike.cn/#/image-manage-old/index
 
 淘宝镜像  https://registry.npm.taobao.org/
 哈啰镜像  http://nodepackages.hellobike.cn:4873/

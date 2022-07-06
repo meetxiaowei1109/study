@@ -132,26 +132,32 @@
   [jira] (https://jira.hellobike.cn/browse/ALADDIN-5383)
   [yapi]
   [增加需求] 这个顺便重构掉吧，把我们业财的 BaseInfo 搬过去
+
   商户中心   https://fat-mp-login.hellobike.com/   
   17600000000   验证码888888
   13346181349   验证码 888888
 
-2. 
-
-
-3. 
-
-4. 
-### 等待开发
-1. 资金平台V1.5-三方账户管理
-  [menuConfig]
-  [status]
-  [branch]
+2. 资金平台V1.5-三方账户管理
+  [menuConfig] 配置证书管理
+  [status] 开发中
+  [branch] release/tripartite0701
   [yuque] (https://hellobike.yuque.com/hb3fga/newbie/ldwve3)
   [wiki]
   [jira] (https://jira.hellobike.cn/browse/ALADDIN-5144)
-  [yapi]
+  [yapi] (https://hellobike.yuque.com/mqxgv1/hc72hk/ggobqe#ppyr0)
   [增加需求]
+
+
+3. 存货成本核算/标准成本管理/标准价管理  批量导入接口更换
+  [status] 开发完成在fat中 开发中
+  [branch] release/ww0705
+  [yapi] (https://yapi.hellobike.cn/project/2554/interface/api/255803)
+
+4. 更换手工账单批量导入下载模板
+  [status] 还未做
+  https://m.hellobike.com/resource/AppSettlementWeb/AppSettlementWeb/yG-vxgp4zu0tk0ZflS95R.xlsx
+### 等待开发
+1. 
 2. 
   [menuConfig]
   [status]

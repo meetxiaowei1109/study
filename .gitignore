@@ -9,6 +9,5 @@ lib
 .jscpd/
 .idea/
 .cache/
-index.html
 **/tmp
 .env
