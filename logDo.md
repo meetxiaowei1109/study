@@ -113,7 +113,12 @@
   [jira] https://jira.hellobike.cn/browse/ALADDIN-5495
 
 13. 规则管理: 合同管理 业务线增加 全网叫车 TAXI  表格增加分成比例
-  [jira]
+
+14. 存货成本核算/标准成本管理/标准价管理  批量导入接口更换
+  [status] 已发pro 开发完成在fat中 开发中
+  [branch] release/ww0705
+  [yapi] (https://yapi.hellobike.cn/project/2554/interface/api/255803)
+  [jira] (https://jira.hellobike.cn/browse/ALADDIN-5685)
 ### 已提测
 1. 
 
@@ -146,18 +151,33 @@
   [jira] (https://jira.hellobike.cn/browse/ALADDIN-5144)
   [yapi] (https://hellobike.yuque.com/mqxgv1/hc72hk/ggobqe#ppyr0)
   [增加需求]
+    证书管理 tip显示(已做)
+    证书管理上传文件限制大小10m, 类型不限制
 
+3.  1d+1d + 2.5d
 
-3. 存货成本核算/标准成本管理/标准价管理  批量导入接口更换
-  [status] 开发完成在fat中 开发中
-  [branch] release/ww0705
-  [yapi] (https://yapi.hellobike.cn/project/2554/interface/api/255803)
+4. 账单、结算单、付款单能力改造 
+  0714 发布 (1) 手工调账管理  批量提交 (2) 手工调账管理 商户主体 拼接 商户ID 
+  [menuConfig] 不需要
+  [status] 未开发
+  [branch]
+  [yuque] (https://hellobike.yuque.com/hb3fga/newbie/nxywkg)
+  [wiki]
+  [jira]
+  [yapi]
+  [增加需求]
+  
 
-4. 更换手工账单批量导入下载模板
+5. 更换手工账单批量导入下载模板 0714 发布
   [status] 还未做
   https://m.hellobike.com/resource/AppSettlementWeb/AppSettlementWeb/yG-vxgp4zu0tk0ZflS95R.xlsx
 ### 等待开发
-1. 
+1. 账单、结算单、付款单能力改造 
+  (1)账单, 付款单, 结算单  合计金额显示
+  (2)结算单回退
+
+
+   
 2. 
   [menuConfig]
   [status]
