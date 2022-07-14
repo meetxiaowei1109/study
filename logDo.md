@@ -119,15 +119,8 @@
   [branch] release/ww0705
   [yapi] (https://yapi.hellobike.cn/project/2554/interface/api/255803)
   [jira] (https://jira.hellobike.cn/browse/ALADDIN-5685)
+  
 ### 已提测
-1. 
-
-2. 
-
-3. 
-
-4. 
-### 开发中
 1. 好物商城接入清结算
   [menuConfig] 需要配置
   [status] 开发中
@@ -135,14 +128,44 @@
   [yuque] (https://hellobike.yuque.com/hb3fga/newbie/iynkak)
   [wiki]
   [jira] (https://jira.hellobike.cn/browse/ALADDIN-5383)
-  [yapi]
+  [yapi] (https://yapi.hellobike.cn/project/2554/interface/api/cat_42254)
   [增加需求] 这个顺便重构掉吧，把我们业财的 BaseInfo 搬过去
+     AppAccountPlatform 
+      业务线：好物商城，HELLO_HAOWU_MALL
+      业务场景：好物商城订单  HELLO_HAOWU_MALL_01
+    商户中心   https://fat-mp-login.hellobike.com/   
+    17600000000  验证码888888
+    13346181349  验证码888888
 
-  商户中心   https://fat-mp-login.hellobike.com/   
-  17600000000   验证码888888
-  13346181349   验证码 888888
+    根据账单类型调用不同的账单明细接口 
+    调账单/acs/queryDetailListWithPage  传参{pageIndex: 1, pageSize: 10, periodStlId: "239281716213579777"}
+    普通账单/SettlementHandleService.querySettlementListWithMerchantId
+    https://yapi.hellobike.cn/project/2554/interface/api/256635
+    
+    能把我的账单放在资金管理下面么，然后把结算中心去掉
 
-2. 资金平台V1.5-三方账户管理
+2. 账单、结算单、付款单能力改造 
+  0714 发布 (1) 手工调账管理  批量提交 (2) 手工调账管理 商户主体 拼接 商户ID
+  (3)账单, 付款单, 结算单  合计金额显示
+  [menuConfig] 不需要
+  [status] 部分开发 未开发
+  [branch] release/ww0711
+  [yuque] (https://hellobike.yuque.com/hb3fga/newbie/nxywkg)
+  [wiki] 
+  [jira] (https://jira.hellobike.cn/browse/ALADDIN-5613)
+  [yapi] (https://hellobike.yuque.com/mqxgv1/at0uwh/ldppg7)
+  [增加需求] 
+    7.14已发pre 7.13 settlement  branch release/ww0713  
+  合同支持特殊协议文字输入查询, depreciationId 指定值 depreciationType 0:表示空值  1:表示非空
+
+3. 更换手工账单批量导入下载模板 0714 发布
+  [status] pre 7.14 已做 还未做
+  [branch] release/ww0711
+  https://m.hellobike.com/resource/AppSettlementWeb/AppSettlementWeb/yG-vxgp4zu0tk0ZflS95R.xlsx
+
+4. 
+### 开发中
+1. 资金平台V1.5-三方账户管理
   [menuConfig] 配置证书管理
   [status] 开发中
   [branch] release/tripartite0701
@@ -154,29 +177,22 @@
     证书管理 tip显示(已做)
     证书管理上传文件限制大小10m, 类型不限制
 
-3.  1d+1d + 2.5d
+2. 
 
-4. 账单、结算单、付款单能力改造 
-  0714 发布 (1) 手工调账管理  批量提交 (2) 手工调账管理 商户主体 拼接 商户ID 
-  [menuConfig] 不需要
-  [status] 未开发
-  [branch]
-  [yuque] (https://hellobike.yuque.com/hb3fga/newbie/nxywkg)
-  [wiki]
-  [jira]
-  [yapi]
-  [增加需求]
+3. 
+
+4. 
   
 
-5. 更换手工账单批量导入下载模板 0714 发布
-  [status] 还未做
-  https://m.hellobike.com/resource/AppSettlementWeb/AppSettlementWeb/yG-vxgp4zu0tk0ZflS95R.xlsx
+5. 
 ### 等待开发
 1. 账单、结算单、付款单能力改造 
-  (1)账单, 付款单, 结算单  合计金额显示
-  (2)结算单回退
 
-
+  结算单回退
+  小哈代扣账单 -> 代扣账单
+  助力车的详情页 账单类型
+  账单列表 已提交, 待审批 提交异常重新提交不要了
+  账单列表 状态前面添加审批状态,  条件筛选添加和结算单一样的筛选状态
    
 2. 
   [menuConfig]
