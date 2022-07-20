@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>轮播图</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .app {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .swiper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .change {
+      position: absolute;
+      top: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      width: 50px;
+      height: 90px;
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, .5);
+      transform: translate(0%, -50%);
+      z-index: 999;
+    }
+
+    .left {
+      left: 0;
+    }
+
+    .right {
+      right: 0;
+    }
+
+    .mainImg {
+      display: flex;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transition: all 0.3s;
+    }
+
+    .mainImg img {
+      width: 600px;
+      height: 300px;
+    }
+
+    .bubble {
+      display: flex;
+      position: absolute;
+      justify-content: space-around;
+      align-items: center;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 30px;
+      background-color: rgba(255, 255, 255, .4);
+      border-radius: 5px;
+    }
+
+    .bubbleItem {
+      width: 20px;
+      height: 20px;
+      background-color: rgba(255, 255, 255, .7);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .bubbleChoice {
+      background-color: pink;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <div class="swiper">
+      <div class="left change">&lt;</div>
+      <div class="mainImg"></div>
+      <div class="right change">&gt;</div>
+      <div class="bubble"></div>
+    </div>
+
+  </div>
+  <script>
+    let imgs = ['https://wx1.sinaimg.cn/mw1024/006WYq6ngy1h2v4dvo192j32yo1o0kjl.jpg',
+      'https://wx3.sinaimg.cn/mw1024/006WYq6ngy1h2v4e1ejptj31qu0zd7wh.jpg',
+      'https://wx2.sinaimg.cn/mw1024/006WYq6ngy1h2v4e7as3kj32yo1o0wr6.jpg',
+      'https://wx3.sinaimg.cn/mw1024/006WYq6ngy1h2v4e5rc48j33341qiu0z.jpg'];
+
+    let mainImg = document.querySelector('.mainImg');
+    let left = document.querySelector('.left');
+    let right = document.querySelector('.right');
+    let bubble = document.querySelector('.bubble');
+
+    let current = 0;
+    bubble.style.width = 35 * imgs.length + 'px';
+
+    imgs.map((e, i) => {
+      let img = document.createElement('img');
+      img.src = e;
+      mainImg.appendChild(img);
+
+      let div = document.createElement('div');
+      div.index = i;
+      div.addEventListener('click', (e) => {
+        current = div.index;
+        changeImg();
+      })
+
+      div.className = 'bubbleItem';
+      bubble.append(div);
+
+    })
+    bubble.children[0].className = 'bubbleItem bubbleChoice';
+
+    left.addEventListener('click', (e) => {
+      current -= 1;
+      if (current < 0) {
+        current = imgs.length - 1;
+      }
+      changeImg();
+    })
+
+    right.addEventListener('click', (e) => {
+      current += 1;
+      if (current > imgs.length - 1) {
+        current = 0;
+      }
+      changeImg();
+    })
+
+    function changeImg() {
+      mainImg.style.left = -current * 600 + 'px';
+      Array.from(bubble.children).map(e => {
+        e.className = 'bubbleItem';
+      })
+      bubble.children[current].className = 'bubbleItem bubbleChoice'
+    }
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Switch开关样式 */
+        input[type='checkbox'].switch {
+            outline: none;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            position: relative;
+            width: 40px;
+            height: 20px;
+            background: #ccc;
+            border-radius: 10px;
+            transition: border-color .3s, background-color .3s;
+        }
+
+        input[type='checkbox'].switch::after {
+            content: '';
+            display: inline-block;
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background: #fff;
+            box-shadow: 0, 0, 2px, #999;
+            /* transition: .4s; */
+            top: 2px;
+            position: absolute;
+            left: 2px;
+        }
+
+        input[type='checkbox'].switch:checked {
+            background: rgb(19, 206, 102);
+        }
+
+        /* 当input[type=checkbox]被选中时：伪元素显示下面样式 位置发生变化 */
+        input[type='checkbox'].switch:checked::after {
+            content: '';
+            position: absolute;
+            left: 55%;
+            top: 2px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <form action="">
+            <input type="checkbox" class="switch" name="" id="">
+        </form>
+
+        <div style="width: 100px;height: 100px;border: 10px solid #ffc0cb;box-sizing: border-box;"></div>
+    </div>
+    <script>
+        let list = [{
+                id: 1,
+                name: '部门A',
+                parentId: 0
+            },
+            {
+                id: 2,
+                name: '部门B',
+                parentId: 0
+            },
+            {
+                id: 3,
+                name: '部门C',
+                parentId: 1
+            },
+            {
+                id: 4,
+                name: '部门D',
+                parentId: 1
+            },
+            {
+                id: 5,
+                name: '部门E',
+                parentId: 2
+            },
+            {
+                id: 6,
+                name: '部门F',
+                parentId: 3
+            },
+            {
+                id: 7,
+                name: '部门G',
+                parentId: 2
+            },
+            {
+                id: 8,
+                name: '部门H',
+                parentId: 4
+            }
+        ]
+
+        function tree(list) {
+            let ans = [];
+            list.forEach(e =>
+                e.children = []
+            )
+            list.forEach((e, i) => {
+                if (e.parentId === 0) {
+                    ans.push(e);
+                } else {
+                    list.forEach((element) => {
+                        if (element.id === e.parentId) {
+                            element.children.push(e);
+                        }
+                    })
+                }
+            })
+            return ans;
+        }
+        // console.log(tree(list))
+
+
+        function deepClone(obj) {
+            if (typeof obj !== 'object') {
+                return obj;
+            }
+            let temp
+            if (obj instanceof Array) {
+                temp = []
+            }
+            if (obj instanceof Object) {
+                temp = {}
+            }
+            for (let i in obj) {
+                return deepClone(obj[i]);
+            }
+        }
+    </script>
+</body>
+
+</html>

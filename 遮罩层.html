@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>遮罩层</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .app {
+      display: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .login {
+      width: 80px;
+      height: 40px;
+      background-color: skyblue;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    .loginOut {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+    }
+
+    .mask {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .5);
+      z-index: 998;
+    }
+
+    .form {
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      width: 450px;
+      height: 300px;
+      text-align: center;
+      z-index: 999;
+      border-radius: 10px;
+    }
+
+    .form .input {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .form .input input {
+      display: block;
+      outline: none;
+      width: 200px;
+      height: 30px;
+      border: 1px solid gray;
+      border-radius: 3px;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    .title {
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <div class="mask"></div>
+    <div class="login loginOut">登录</div>
+    <div class="form">
+      <div class="close">x</div>
+      <div class="input">
+        <div class="title">账号登录</div>
+        <input type="text"
+               name="account"
+               id="account"
+               placeholder="请输入账号">
+        <input type="password"
+               name="password"
+               id="password"
+               placeholder="请输入密码">
+        <div class="login">登录</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const mask = document.querySelector('.mask');
+    const loginOut = document.querySelector('.loginOut');
+    const closeMask = document.querySelector('.close');
+    const form = document.querySelector('.form');
+    const login = document.querySelector('.form .login');
+
+    const account = document.querySelector('#account');
+    const password = document.querySelector('#password');
+
+    loginOut.addEventListener('click', (e) => {
+      mask.style.display = 'block';
+      form.style.display = 'block';
+    })
+
+    closeMask.addEventListener('click', (e) => {
+      mask.style.display = 'none';
+      form.style.display = 'none';
+    })
+
+    login.addEventListener('click', (e) => {
+      if (!/^[0-9]+$/i.test(account.value)) {
+        alert('账号只能输入数字');
+        return false;
+      }
+      if (!/^[a-zA-Z0-9]+$/i.test(password.value)) {
+        alert('密码只能输入数字英文大小写');
+        return false;
+      }
+      location.href = 'https://www.baidu.com'
+    })
+
+  </script>
+</body>
+
+</html>

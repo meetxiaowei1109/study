@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .button {
+      width: 70px;
+      height: 30px;
+      background-color: #ffc0cb;
+      border: 1px solid skyblue;
+      cursor: pointer;
+      line-height: 30px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section>
+
+    </section>
+
+    <div class="button">添加</div>
+  </main>
+
+  <script>
+    let main = document.querySelector('main');
+    let button = document.querySelector('.button');
+
+    button.addEventListener('click', () => {
+      main.innerHTML = new Array(40000).fill(undefined).map((e, i) =>
+        `<span style="color: rgb(${Math.floor(Math.random() * 255)},
+          ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})">无双${i}</span>`
+      ).join('');
+
+      // new Array(40000).fill(undefined).map((e, i) => {
+      //   let span = document.createElement('span');
+      //   span.style.color = `rgb(${Math.floor(Math.random() * 255)},
+      //   ${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)})`
+      //   span.innerText = `无双${i}`;
+      //   main.appendChild(span);
+      // });
+    })
+
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+{
+    // 插件名称
+    "name": "Hello Extensions",
+    // 插件的描述
+    "description" : "Base Level Extension",
+    // 插件的版本
+    "version": "1.0",
+    // 配置插件程序的版本号，主流版本是2，最新是3
+    "manifest_version": 2
+}

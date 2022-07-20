@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "jsx": "preserve",
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "src/*": [
+        "src/*"
+      ],
+      "base/*": [
+        "base/*"
+      ],
+    }
+  }
+}

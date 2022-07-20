@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .one {
+      width: 100px;
+      height: 100px;
+      background-color: #ffc0cb;
+    }
+
+    .two {
+      position: relative;
+      background-color: skyblue;
+    }
+
+    .three {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      background-color: violet;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="one"></div>
+  <div class="two">
+    <div class="three"></div>
+  </div>
+
+  <script>
+    let a = [];
+    for (var i = 0; i < 3; i++) {
+      a[i] = function () {
+        return () => console.log(i)
+      }
+    }
+    a[0]()();
+    a[1]()();
+    a[2]()();
+
+    function fn() {
+      let str = '111';
+
+      return () => str
+    }
+
+    const answer = fn()();
+    console.log(answer);
+
+    // const one = document.querySelector('.one');
+    // console.log(getComputedStyle(one).background);
+  </script>
+</body>
+
+</html>
